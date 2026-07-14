@@ -46,6 +46,15 @@ public class TC003_SelectHotelStep extends BaseClass {
 		System.out.println("Last Hotel Name is " + pom.getSelectHotelPage().SecondLastHotelPrice());
 
 	}
+	
+	@When("User select the second hotel and dismiss the alert")
+	public void userSelectTheSecondHotelAndDismissTheAlert() {
+
+		pom.getSelectHotelPage().clickIndexBtnContinueFromFirstBasedOnIndex(2);
+		DismissAlert();
+
+	}
+	
 
 	@When("User select the second from last hotel and accept the alert")
 	public void userSelectTheSecondFromLastHotelAndAcceptTheAlert() throws InterruptedException {
@@ -61,14 +70,6 @@ public class TC003_SelectHotelStep extends BaseClass {
 
 		pom.getSelectHotelPage().getHotelNamesfromFirstBasedOnIndex(2);
 		pom.getSelectHotelPage().getHotelPriceFromFirstBasedOnIndex(2);
-
-	}
-
-	@When("User select the second hotel and dismiss the alert")
-	public void userSelectTheSecondHotelAndDismissTheAlert() {
-
-		pom.getSelectHotelPage().clickIndexBtnContinueFromFirstBasedOnIndex(2);
-		DismissAlert();
 
 	}
 

@@ -1,4 +1,4 @@
-@TC_002
+
 Feature: OMR Branch Hotel Search Functionality
   This feature verifies the hotel search functionality of the OMR Branch hotel application,
   including search with all fields, mandatory fields, validations, sorting, filtering,
@@ -47,8 +47,8 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Suite     | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        | 1            |
-
+      | Tamil Nadu | Chennai | Suite     | 28-07-2026    | 29-07-2026     | 1-One      | 2-Two        | 1            |
+	@Test
   Scenario Outline: Verify Suite room type hotels are listed
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -57,7 +57,7 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Studio    | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        | 1            |
+      | Tamil Nadu | Chennai | Studio    | 28-07-2026    | 29-07-2026     | 1-One      | 2-Two        | 1            |
 
   Scenario Outline: Verify header contains selected room type
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
