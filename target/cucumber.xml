@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="14.709" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-13T09:27:01.652149500Z">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with all fields - #1.1" time="14.46">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+]]></system-out>
+</testcase>
+</testsuite>
