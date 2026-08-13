@@ -7,7 +7,7 @@ Feature: OMR Branch Book Hotel Functionality
     Given User is on the OMR Branch hotel page
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
-    When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-08-2026", "02-08-2026", "1-One", "2-Two" and "1"
+    When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
   Scenario Outline: Verify book hotel with GST, card payment and special request

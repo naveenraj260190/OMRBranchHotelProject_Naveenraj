@@ -7,7 +7,7 @@ Feature: OMR Branch Select Hotel Functionality
     Given User is on the OMR Branch hotel page
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
-    When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-07-2026", "30-07-2026", "1-One", "2-Two" and "1"
+    When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
   Scenario: Verify select last hotel and navigate to Book Hotel page
@@ -20,7 +20,6 @@ Feature: OMR Branch Select Hotel Functionality
     And User select the second from last hotel and accept the alert
     Then User should verify after select success message "Book Hotel"
 
-@Naveenraj
   Scenario: Verify select second hotel and dismiss the alert
     When User save the second hotel name and hotel price
     And User select the second hotel and dismiss the alert
