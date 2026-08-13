@@ -7,7 +7,7 @@ Feature: OMR Branch Cancel Booking Functionality
     Given User is on the OMR Branch hotel page
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
-    When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-07-2026", "02-07-2026", "1-One", "2-Two" and "1"
+    When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
   Scenario Outline: Verify cancel created Order ID using card payment with GST and special request
@@ -39,7 +39,7 @@ Feature: OMR Branch Cancel Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | Card Type  | Modify Date |
-      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card | 30-07-2026  |
+      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card | 30-09-2026  |
 
   
   Scenario Outline: Verify cancel created Order ID using UPI payment with GST and special request
@@ -64,7 +64,7 @@ Feature: OMR Branch Cancel Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | UPI ID               | Modify Date |
-      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc | 30-07-2026  |
+      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc | 30-09-2026  |
 
   @Ignore
   Scenario Outline: Verify cancel existing Order ID

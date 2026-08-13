@@ -7,7 +7,7 @@ Feature: OMR Branch Change Booking Functionality
     Given User is on the OMR Branch hotel page
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
-    When User search hotel "Tamil Nadu", "Chennai", "Suite", "25-07-2026", "26-07-2026", "1-One", "2-Two" and "1"
+    When User search hotel "Tamil Nadu", "Chennai", "Suite", "25-09-2026", "26-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
   Scenario Outline: Verify modify created Order ID using card payment with GST and special request
@@ -35,7 +35,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | Card Type  | Modify Date |
-      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card | 30-07-2026  |
+      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card | 30-09-2026  |
 
   Scenario Outline: Verify modify created Order ID using UPI payment with GST and special request
     When User save the last hotel name and hotel price
@@ -57,7 +57,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | UPI ID               | Modify Date |
-      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc | 30-07-2026  |
+      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc | 30-09-2026  |
 
   Scenario Outline: Verify modify created Order ID using card payment without GST and with special request
     When User save the last hotel name and hotel price
@@ -79,7 +79,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Request      | Card Type  | Modify Date |
-      | Mr                | Greens     | Tech      | 9952040520 | ash.naveen.kv@gmail.com | Need parking | debit_card | 30-07-2026  |
+      | Mr                | Greens     | Tech      | 9952040520 | ash.naveen.kv@gmail.com | Need parking | debit_card | 30-09-2026  |
 
   Scenario Outline: Verify modify created Order ID using card payment with GST and without special request
     When User save the last hotel name and hotel price
@@ -101,7 +101,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Card Type  | Modify Date |
-      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | debit_card | 30-07-2026  |
+      | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | debit_card | 30-09-2026  |
 
   @Ignore
   Scenario Outline: Verify modify existing Order ID check-in date
@@ -114,7 +114,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Modify Date |
-      | 30-07-2026  |
+      | 30-09-2026  |
 
   @Ignore
   Scenario Outline: Verify modify first displayed Order ID check-in date
@@ -125,7 +125,7 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Modify Date |
-      | 30-07-2026  |
+      | 30-09-2026  |
 
   @Ignore
   Scenario Outline: Verify modify last displayed Order ID check-in date
@@ -136,4 +136,4 @@ Feature: OMR Branch Change Booking Functionality
 
     Examples:
       | Modify Date |
-      | 30-07-2026  |
+      | 30-09-2026  |

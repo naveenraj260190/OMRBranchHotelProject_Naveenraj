@@ -23,6 +23,14 @@ public class LoginPage extends BaseClass {
 
 	@FindBy(id = "errorMessage")
 	private WebElement GetLoginErrorMsgTxt;
+	
+	@FindBy(xpath="//h3[text()='Hotel Booking']")
+	private WebElement BtnHotelBooking;
+	
+
+	public WebElement getBtnHotelBooking() {
+		return BtnHotelBooking;
+	}
 
 	public WebElement getGetLoginErrorMsgTxt() {
 		return GetLoginErrorMsgTxt;
@@ -60,5 +68,10 @@ public class LoginPage extends BaseClass {
 
 	public void clickLoginBtn() {
 		clickElement(BtnLogin);
+	}
+	
+	public void clickHotelBooking()
+	{
+		clickElement(BtnHotelBooking);
 	}
 }

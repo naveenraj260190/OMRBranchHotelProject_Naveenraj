@@ -1,4 +1,3 @@
-
 Feature: OMR Branch Hotel Search Functionality
   This feature verifies the hotel search functionality of the OMR Branch hotel application,
   including search with all fields, mandatory fields, validations, sorting, filtering,
@@ -9,13 +8,14 @@ Feature: OMR Branch Hotel Search Functionality
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
 
+  @Jenkin
   Scenario Outline: Verify search hotels with all fields
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Suite     | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        | 1            |
+      | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
   Scenario Outline: Verify search hotels with only mandatory fields
     When User search hotel "<State>", "<City>", "<Check in date>", "<Check out date>", "<No of Room>" and "<No of Adults>"
@@ -23,7 +23,7 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Check in date | Check out date | No of Room | No of Adults |
-      | Tamil Nadu | Chennai | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        |
+      | Tamil Nadu | Chennai | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        |
 
   Scenario: Verify search hotel without entering any fields
     And User click Search button
@@ -37,7 +37,7 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Suite     | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        | 1            |
+      | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
   Scenario Outline: Verify hotel name sorting in descending order
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
@@ -47,8 +47,9 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Suite     | 28-07-2026    | 29-07-2026     | 1-One      | 2-Two        | 1            |
-	@Test
+      | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
+
+  @Test
   Scenario Outline: Verify Suite room type hotels are listed
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -57,7 +58,7 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Studio    | 28-07-2026    | 29-07-2026     | 1-One      | 2-Two        | 1            |
+      | Tamil Nadu | Chennai | Studio    | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
   Scenario Outline: Verify header contains selected room type
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
@@ -66,4 +67,4 @@ Feature: OMR Branch Hotel Search Functionality
 
     Examples:
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
-      | Tamil Nadu | Chennai | Suite     | 28-06-2026    | 29-06-2026     | 1-One      | 2-Two        | 1            |
+      | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
