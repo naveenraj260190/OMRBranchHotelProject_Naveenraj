@@ -6,7 +6,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
@@ -20,6 +22,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -133,9 +136,19 @@ public class BaseClass {
 	public static void browserLaunch(String browserType) {
 		String type = browserType.toUpperCase();
 
+		Map<String, Object> prefs = new HashMap<>();
+		prefs.put("profile.default_content_setting_values.geolocation", 2);
+		// prefs.put("")
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" })
+				.addArguments("--disable-notifications").addArguments("--incognito").addArguments("--start-maximized")
+				.addArguments("--headed").setImplicitWaitTimeout(Duration.ofSeconds(30))
+				.setExperimentalOption("prefs", prefs);
+
+		
 		switch (type) {
 		case "CHROME":
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(chromeOptions);
 			break;
 		case "FIREFOX":
 			driver = new FirefoxDriver();
