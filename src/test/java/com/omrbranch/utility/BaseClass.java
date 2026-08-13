@@ -142,7 +142,7 @@ public class BaseClass {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		chromeOptions.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" })
 				.addArguments("--disable-notifications").addArguments("--incognito").addArguments("--start-maximized")
-				.addArguments("--headed").setImplicitWaitTimeout(Duration.ofSeconds(30))
+				.addArguments("--headless").setImplicitWaitTimeout(Duration.ofSeconds(30))
 				.setExperimentalOption("prefs", prefs);
 
 		
