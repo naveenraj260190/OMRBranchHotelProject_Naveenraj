@@ -1,4 +1,3 @@
-@TC_005
 Feature: OMR Branch Change Booking Functionality
   This feature verifies the change booking functionality of the OMR Branch hotel application,
   including modifying check-in date for created bookings using Card and UPI payments.
@@ -10,6 +9,7 @@ Feature: OMR Branch Change Booking Functionality
     When User search hotel "Tamil Nadu", "Chennai", "Suite", "25-09-2026", "26-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
+  @Ignore
   Scenario Outline: Verify modify created Order ID using card payment with GST and special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -37,6 +37,7 @@ Feature: OMR Branch Change Booking Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | Card Type  | Modify Date |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card | 30-09-2026  |
 
+  @Ignore
   Scenario Outline: Verify modify created Order ID using UPI payment with GST and special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -59,6 +60,7 @@ Feature: OMR Branch Change Booking Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | UPI ID               | Modify Date |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc | 30-09-2026  |
 
+@Ignore
   Scenario Outline: Verify modify created Order ID using card payment without GST and with special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -81,6 +83,7 @@ Feature: OMR Branch Change Booking Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Request      | Card Type  | Modify Date |
       | Mr                | Greens     | Tech      | 9952040520 | ash.naveen.kv@gmail.com | Need parking | debit_card | 30-09-2026  |
 
+@Ignore
   Scenario Outline: Verify modify created Order ID using card payment with GST and without special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert

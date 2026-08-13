@@ -1,4 +1,3 @@
-@TC_004
 Feature: OMR Branch Book Hotel Functionality
   This feature verifies hotel booking with Card and UPI payment,
   including GST, special request, payment validation, and booking confirmation.
@@ -10,6 +9,7 @@ Feature: OMR Branch Book Hotel Functionality
     When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1"
     Then User should validate after search hotel success message "Select Hotel"
 
+  @Yes
   Scenario Outline: Verify book hotel with GST, card payment and special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -29,6 +29,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | Card Type  |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card |
 
+  @Yes
   Scenario Outline: Verify book hotel with GST, card payment and without special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -49,6 +50,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | Card Type  |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | debit_card |
 
+  @Yes
   Scenario Outline: Verify book hotel without GST ,card payment and with special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -68,6 +70,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Request      | Card Type  |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | Need parking | debit_card |
 
+  @Yes
   Scenario Outline: Verify book hotel without GST, card payment and without special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -87,6 +90,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Card Type  |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | debit_card |
 
+  @Yes
   Scenario Outline: Verify card payment error messages without entering payment details
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -101,6 +105,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking |
 
+  @Yes
   Scenario Outline: Verify book hotel with GST UPI payment and special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -115,6 +120,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Enter Registration No. | Enter Company Name     | Enter Company Address | Request      | UPI ID               |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | Need parking | seleniumtraining@vbc |
 
+  @Yes
   Scenario Outline: Verify book hotel with GST UPI payment and without special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -129,6 +135,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email          | Enter Registration No. | Enter Company Name     | Enter Company Address | UPI ID               |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | test@gmail.com | 9043592058             | Greens Tech OMR Branch | Thoraipakkam          | seleniumtraining@vbc |
 
+  @Yes
   Scenario Outline: Verify book hotel without GST UPI payment and with special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -143,6 +150,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | Request      | UPI ID               |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | Need parking | seleniumtraining@vbc |
 
+  @Yes
   Scenario Outline: Verify book hotel without GST UPI payment and without special request
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert
@@ -157,6 +165,7 @@ Feature: OMR Branch Book Hotel Functionality
       | Select Salutation | First Name | Last Name | Mobile No. | Email                   | UPI ID               |
       | Mr                | Naveenraj  | Rajendran | 9952040520 | ash.naveen.kv@gmail.com | seleniumtraining@vbc |
 
+  @Yes
   Scenario Outline: Verify UPI payment error message without entering UPI ID
     When User save the last hotel name and hotel price
     And User select the last hotel and accept the alert

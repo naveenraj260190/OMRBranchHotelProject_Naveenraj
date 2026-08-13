@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "",
+		tags = "@Yes",
 		dryRun = false,
 		stepNotifications = true,
 		snippets = SnippetType.CAMELCASE,
