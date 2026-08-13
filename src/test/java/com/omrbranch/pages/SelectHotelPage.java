@@ -31,6 +31,9 @@ public class SelectHotelPage extends BaseClass {
 	public List<WebElement> getTotalPrice() {
 		return totalPrice;
 	}
+	
+	@FindBy(xpath = "//div[@class='col-md-5 hotel-suites']//h5")
+	private List<WebElement> Hotelnames;
 
 	public List<WebElement> getHotelnames() {
 		return Hotelnames;
@@ -44,8 +47,7 @@ public class SelectHotelPage extends BaseClass {
 		return SortNameDesc;
 	}
 
-	@FindBy(xpath = "//div[@class='col-md-5 hotel-suites']//h5")
-	private List<WebElement> Hotelnames;
+
 
 	@FindBy(xpath = "//label[@for='value_ndesc']")
 	private WebElement SortNameDesc;

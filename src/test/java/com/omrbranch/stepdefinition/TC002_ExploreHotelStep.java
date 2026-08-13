@@ -18,6 +18,7 @@ public class TC002_ExploreHotelStep {
 	public void userSearchHotelAnd(String State, String City, String RoomType, String CheckInDate, String CheckOutDate,
 			String noOfRoom, String noOfAdults, String NoOfChilds) throws InterruptedException {
 
+		pom.getLoginPage().clickHotelBooking();
 		pom.getExploreHotelPage().userSearchHotelWithAllDetails(State, City, RoomType, CheckInDate, CheckOutDate,
 				noOfRoom, noOfAdults, NoOfChilds);
 		pom.getExploreHotelPage().ClickSearchButton();
@@ -28,6 +29,7 @@ public class TC002_ExploreHotelStep {
 	@When("User search hotel {string}, {string}, {string}, {string}, {string} and {string}")
 	public void userSearchHotelAnd(String State, String City, String CheckInDate, String CheckOutDate, String NoOfRoom,
 			String NoOfAdults) throws InterruptedException {
+		pom.getLoginPage().clickHotelBooking();
 		pom.getExploreHotelPage().userSearchHotelMandateFields(State, City, CheckInDate, CheckOutDate, NoOfRoom,
 				NoOfAdults);
 		pom.getExploreHotelPage().ClickSearchButton();
