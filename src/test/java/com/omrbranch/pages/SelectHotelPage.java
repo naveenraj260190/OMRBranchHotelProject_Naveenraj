@@ -74,9 +74,13 @@ public class SelectHotelPage extends BaseClass {
 		return SelectHotelConfirmMsg;
 	}
 
+//	public String selectHotelMsg() {
+//		String Msg = getTextElement(SelectHotelConfirmMsg);
+//		return Msg;
+//	}
+	
 	public String selectHotelMsg() {
-		String Msg = getTextElement(SelectHotelConfirmMsg);
-		return Msg;
+		return getTextElement(SelectHotelConfirmMsg);
 	}
 
 	public void SelectSortPriceLowToHigh() {

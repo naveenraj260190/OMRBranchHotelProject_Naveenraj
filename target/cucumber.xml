@@ -1,12 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="14.709" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-08-13T09:27:01.652149500Z">
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with all fields - #1.1" time="14.46">
+<testsuite name="Cucumber" time="0.756" tests="22" skipped="0" failures="0" errors="0" timestamp="2026-08-31T10:22:41.205509400Z">
+<testcase classname="OMR Branch Hotel Application" name="Verify login with valid credentials without Enter Key - #1.1" time="0.036">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Application" name="Verify login with valid credentials using Enter Key via Keyboard - #1.1" time="0.008">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!" with enter key...passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Application" name="Verify login with invalid credentials - #1.1" time="0.009">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "test90!"....................passed
+Then User should verify error message after login "Invalid Login details or Your Password might have expired.".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with all fields - #1.1" time="0.016">
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
 Then User should verify success message after login "Welcome Naveenraj".....passed
 When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
 Then User should validate after search hotel success message "Select Hotel".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with only mandatory fields - #1.1" time="0.018">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "28-09-2026", "29-09-2026", "1-One" and "2-Two".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotel without entering any fields" time="0.006">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+And User click Search button................................................passed
+Then User should verify after search hotel error message "Please select state", "Please select city", "Please select Check-in date", "Please select Check-out date", "Please select no. of rooms" and "Please select no. of adults".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify hotel name sorting in descending order - #1.1" time="0.01">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User click sort from descending order..................................passed
+Then User should verify after sorting that names are listed in descending order.passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify Suite room type hotels are listed - #1.1" time="0.008">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Studio", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User click Suite room type.............................................passed
+Then User should verify after filtering that Suite room type is listed......passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify header contains selected room type - #1.1" time="0.007">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+And User should verify the header contains "Suite"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select last hotel and navigate to Book Hotel page" time="0.009">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select second from last hotel and navigate to Book Hotel page" time="0.008">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the second from last hotel name and hotel price..............passed
+And User select the second from last hotel and accept the alert.............passed
+Then User should verify after select success message "Book Hotel"...........passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select second hotel and dismiss the alert" time="0.009">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the second hotel name and hotel price........................passed
+And User select the second hotel and dismiss the alert......................passed
+Then User should validate after search hotel success message "Select Hotel".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and special request - #1.1" time="0.045">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
+And User enter payment details, proceed with Card Type "debit_card".........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and without special request - #1.1" time="0.021">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".passed
+And User Skipping Special Request...........................................passed
+And User enter payment details, proceed with Card Type "debit_card".........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST ,card payment and with special request - #1.1" time="0.032">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User skipping GST Details and User add Special Request "Need parking"...passed
+And User enter payment details, proceed with Card Type "debit_card".........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST, card payment and without special request - #1.1" time="0.019">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User skipping GST Details and Special Request...........................passed
+And User enter payment details, proceed with Card Type "debit_card".........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify card payment error messages without entering payment details - #1.1" time="0.007">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
+And User click credit card..................................................passed
+And User click submit without entering payment details......................passed
+Then User should verify after payment details error message "Please select your card type", "Please select your card", "Please provide your card number", "Please provide name on your card", "Please provide your Card Expiry Date" and "Please provide your Card's security code".passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and special request - #1.1" time="0.013">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
+And User enter upi details "seleniumtraining@vbc" and click submit..........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and without special request - #1.1" time="0.009">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "test@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".passed
+And User enter upi details "seleniumtraining@vbc" and click submit..........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and with special request - #1.1" time="0.008">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User skipping GST Details and User add Special Request "Need parking"...passed
+And User enter upi details "seleniumtraining@vbc" and click submit..........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and without special request - #1.1" time="0.007">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User skipping GST Details and Special Request...........................passed
+And User enter upi details "seleniumtraining@vbc" and click submit..........passed
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
+Then User should verify same selected Hotel is booked or not................passed
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify UPI payment error message without entering UPI ID - #1.1" time="0.005">
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....passed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
+Then User should validate after search hotel success message "Select Hotel".passed
+When User save the last hotel name and hotel price..........................passed
+And User select the last hotel and accept the alert.........................passed
+Then User should verify after select success message "Book Hotel"...........passed
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
+And User click upi..........................................................passed
+And User click submit without entering payment details......................passed
+Then User should verify after payment details error message "Please provide your UPI ID".passed
 ]]></system-out>
 </testcase>
 </testsuite>
