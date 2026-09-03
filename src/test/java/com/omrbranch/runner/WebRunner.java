@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@T",
+		tags = "@Explore or @BookHotel",
 		dryRun = false,
 		stepNotifications = true,
 		snippets = SnippetType.CAMELCASE,

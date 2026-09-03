@@ -62,8 +62,7 @@ public class LoginPage extends BaseClass {
 	}
 
 	public String getLoginErrorMessageText() {
-		String GetErrorMsg = getTextElement(GetLoginErrorMsgTxt);
-		return GetErrorMsg;
+		return getTextElement(GetLoginErrorMsgTxt);
 	}
 
 	public void clickLoginBtn() {

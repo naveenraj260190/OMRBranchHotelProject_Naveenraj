@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.omrbranch.runner.TestRunner" time="36.908" tests="6" errors="0" skipped="0" failures="0" flakes="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.omrbranch.runner.TestRunner" time="3.82" tests="15" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Users\ashna\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ashna\AppData\Local\Temp\surefire14754740825043021037\surefirebooter-20260813145700220_3.jar C:\Users\ashna\AppData\Local\Temp\surefire14754740825043021037 2026-08-13T14-57-00_088-jvmRun1 surefire-20260813145700220_1tmp surefire_0-20260813145700220_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ashna\AppData\Local\Temp\surefire15010437081254813021\surefirebooter-20260902125152356_3.jar C:\Users\ashna\AppData\Local\Temp\surefire15010437081254813021 2026-09-02T12-51-52_110-jvmRun1 surefire-20260902125152356_1tmp surefire_0-20260902125152356_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ashna\eclipse-workspace\OMRBranchHotelProject_Naveenraj\target\test-classes;C:\Users\ashna\eclipse-workspace\OMRBranchHotelProject_Naveenraj\target\classes;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-java\7.23.0\cucumber-java-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-core\7.23.0\cucumber-core-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-gherkin\7.23.0\cucumber-gherkin-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.23.0\cucumber-gherkin-messages-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\gherkin\32.1.1\gherkin-32.1.1.jar;C:\Users\ashna\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\ashna\.m2\repository\io\cucumber\query\13.6.0\query-13.6.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\ashna\.m2\repository\io\cucumber\datatable\7.23.0\datatable-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-plugin\7.23.0\cucumber-plugin-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\docstring\7.23.0\docstring-7.23.0.jar;C:\Users\ashna\.m2\repository\io\cucumber\html-formatter\21.10.1\html-formatter-21.10.1.jar;C:\Users\ashna\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\ashna\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\ashna\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\ashna\.m2\repository\net\masterthought\cucumber-reporting\5.11.0\cucumber-reporting-5.11.0.jar;C:\Users\ashna\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.2\jackson-databind-2.21.2.jar;C:\Users\ashna\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\ashna\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.2\jackson-core-2.21.2.jar;C:\Users\ashna\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.21.2\jackson-datatype-jsr310-2.21.2.jar;C:\Users\ashna\.m2\repository\org\apache\velocity\velocity-engine-core\2.4.1\velocity-engine-core-2.4.1.jar;C:\Users\ashna\.m2\repository\joda-time\joda-time\2.14.1\joda-time-2.14.1.jar;C:\Users\ashna\.m2\repository\org\apache\commons\commons-configuration2\2.13.0\commons-configuration2-2.13.0.jar;C:\Users\ashna\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\ashna\.m2\repository\org\apache\commons\commons-text\1.15.0\commons-text-1.15.0.jar;C:\Users\ashna\.m2\repository\org\jsoup\jsoup\1.22.1\jsoup-1.22.1.jar;C:\Users\ashna\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20260313.1\owasp-java-html-sanitizer-20260313.1.jar;C:\Users\ashna\.m2\repository\com\googlecode\owasp-java-html-sanitizer\java8-shim\20260313.1\java8-shim-20260313.1.jar;C:\Users\ashna\.m2\repository\com\googlecode\owasp-java-html-sanitizer\java10-shim\20260313.1\java10-shim-20260313.1.jar;C:\Users\ashna\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\ashna\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.17\jcl-over-slf4j-2.0.17.jar;C:\Users\ashna\.m2\repository\io\cucumber\cucumber-junit\7.23.0\cucumber-junit-7.23.0.jar;C:\Users\ashna\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ashna\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-java\4.43.0\selenium-java-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-api\4.43.0\selenium-api-4.43.0.jar;C:\Users\ashna\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.43.0\selenium-chrome-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.43.0\selenium-chromium-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-json\4.43.0\selenium-json-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.43.0\selenium-manager-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v145\4.43.0\selenium-devtools-v145-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v146\4.43.0\selenium-devtools-v146-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.43.0\selenium-devtools-v147-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.43.0\selenium-edge-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.43.0\selenium-firefox-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-http\4.43.0\selenium-http-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.43.0\selenium-ie-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.43.0\selenium-remote-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\com\google\guava\guava\33.5.0-jre\guava-33.5.0-jre.jar;C:\Users\ashna\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\ashna\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\ashna\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\ashna\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-api\1.60.1\opentelemetry-api-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-context\1.60.1\opentelemetry-context-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-common\1.60.1\opentelemetry-common-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.60.1\opentelemetry-exporter-logging-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.60.1\opentelemetry-sdk-common-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.60.1\opentelemetry-sdk-extension-autoconfigure-spi-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.60.1\opentelemetry-sdk-extension-autoconfigure-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.60.1\opentelemetry-sdk-trace-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.60.1\opentelemetry-sdk-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.60.1\opentelemetry-sdk-metrics-1.60.1.jar;C:\Users\ashna\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.60.1\opentelemetry-sdk-logs-1.60.1.jar;C:\Users\ashna\.m2\repository\net\bytebuddy\byte-buddy\1.18.8-jdk5\byte-buddy-1.18.8-jdk5.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-os\4.43.0\selenium-os-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.43.0\selenium-safari-driver-4.43.0.jar;C:\Users\ashna\.m2\repository\org\seleniumhq\selenium\selenium-support\4.43.0\selenium-support-4.43.0.jar;C:\Users\ashna\.m2\repository\commons-io\commons-io\2.22.0\commons-io-2.22.0.jar"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ashna\AppData\Local\Temp\surefire14754740825043021037\surefirebooter-20260813145700220_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ashna\AppData\Local\Temp\surefire15010437081254813021\surefirebooter-20260902125152356_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.10+7-LTS"/>
@@ -52,7 +52,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\ashna\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ashna/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin/server;C:/Users/ashna/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin;C:\Python314\Scripts\;C:\Python314\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-25.0.3\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\ashna\AppData\Local\Microsoft\WindowsApps;C:\Users\ashna\AppData\Roaming\npm;C:\Users\ashna\AppData\Local\Programs\Microsoft VS Code\bin;C:\Softwares\platform-tools;C:\Softwares\cmdline-tools\latest\bin;C:\Program Files\Git\cmd;C:\Users\ashna\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-25.0.3\bin;C:\Users\ashna\AppData\Roaming\npm;C:\Users\ashna\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\System32;;."/>
+    <property name="java.library.path" value="C:\Users\ashna\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/ashna/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin/server;C:/Users/ashna/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.10.v20260205-0638/jre/bin;C:\Python314\Scripts\;C:\Python314\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-25.0.3\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\ashna\AppData\Local\Microsoft\WindowsApps;C:\Users\ashna\AppData\Roaming\npm;C:\Users\ashna\AppData\Local\Programs\Microsoft VS Code\bin;C:\Softwares\platform-tools;C:\Softwares\cmdline-tools\latest\bin;C:\Program Files\Git\cmd;C:\Users\ashna\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-25.0.3\bin;C:\Users\ashna\AppData\Roaming\npm;C:\Users\ashna\AppData\Local\Programs\Microsoft VS Code\bin;C:\WINDOWS\system32;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
@@ -60,123 +60,153 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.004">
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.01">
     <system-out><![CDATA[
-@Jenkin
-Scenario Outline: Verify search hotels with all fields                                                          &amp#27;[90m# src/test/resources/features/TC002_Explorehotel.feature:18&amp#27;[0m
-
-    Embedding Before Step Screenshot [image/png 886328 bytes]
-
+@Login
+Scenario Outline: Verify login with valid credentials without Enter Key   &amp#27;[90m# src/test/resources/features/TC001_Login.feature:15&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[Aug 13, 2026 2:57:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 151, returning the closest version; found: 147; Please update to a Selenium version that supports CDP version 151
-]]></system-err>
   </testcase>
-  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.424">
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify success message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Welcome Naveenraj"&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(java.lang.String)&amp#27;[0m
+
+@Login
+Scenario Outline: Verify login with valid credentials using Enter Key via Keyboard &amp#27;[90m# src/test/resources/features/TC001_Login.feature:24&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.0">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify success message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Welcome Naveenraj"&amp#27;[0m          &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(java.lang.String)&amp#27;[0m
+
+@Login
+Scenario Outline: Verify login with invalid credentials                                                          &amp#27;[90m# src/test/resources/features/TC001_Login.feature:33&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify error message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Invalid Login details or Your Password might have expired."&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifyErrorMessageAfterLogin(java.lang.String)&amp#27;[0m
+
+@TC_003 @SelectHotel
+Scenario: Verify select last hotel and navigate to Book Hotel page                                              &amp#27;[90m# src/test/resources/features/TC003_SelectHotel.feature:13&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify after select success message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Book Hotel"&amp#27;[0m                                             &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userShouldVerifyAfterSelectSuccessMessage(java.lang.String)&amp#27;[0m
+
+@TC_003 @SelectHotel
+Scenario: Verify select second from last hotel and navigate to Book Hotel page                                  &amp#27;[90m# src/test/resources/features/TC003_SelectHotel.feature:18&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User is on the OMR Branch hotel page" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify after select success message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Book Hotel"&amp#27;[0m                                             &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userShouldVerifyAfterSelectSuccessMessage(java.lang.String)&amp#27;[0m
+
+@TC_003 @SelectHotel
+Scenario: Verify select second hotel and dismiss the alert                                                      &amp#27;[90m# src/test/resources/features/TC003_SelectHotel.feature:23&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                              &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
     <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
-
-    Embedding After Step Screenshot [image/png 886328 bytes]
-
-
-    Embedding Before Step Screenshot [image/png 886328 bytes]
-
 ]]></system-out>
   </testcase>
-  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="3.174">
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Naveen90!"&amp#27;[0m              &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Naveen90!"&amp#27;[0m&amp#27;[32m with enter key&amp#27;[0m        &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAndWithEnterKey(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
     <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Naveen90!"&amp#27;[0m                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
-
-    Embedding After Step Screenshot [image/png 886660 bytes]
-
-
-    Embedding Before Step Screenshot [image/png 901231 bytes]
-
 ]]></system-out>
   </testcase>
-  <testcase name="User search hotel &quot;Tamil Nadu&quot;, &quot;Chennai&quot;, &quot;Suite&quot;, &quot;28-09-2026&quot;, &quot;29-09-2026&quot;, &quot;1-One&quot;, &quot;2-Two&quot; and &quot;1&quot;" classname="com.omrbranch.runner.TestRunner" time="3.792">
+  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Naveen90!"&amp#27;[0m                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify success message after login &quot;Welcome Naveenraj&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"Naveen90!"&amp#27;[0m                                                    &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;Naveen90!&quot; with enter key" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                                       &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User enters &quot;ash.naveen.kv@gmail.com&quot; and &quot;test90!&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the OMR Branch hotel page&amp#27;[0m                                                                     &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userIsOnTheOMRBranchHotelPage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify error message after login &quot;Invalid Login details or Your Password might have expired.&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser enters &amp#27;[0m&amp#27;[32m&amp#27;[1m"ash.naveen.kv@gmail.com"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"test90!"&amp#27;[0m                                                       &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User search hotel &quot;Tamil Nadu&quot;, &quot;Chennai&quot;, &quot;Suite&quot;, &quot;29-09-2026&quot;, &quot;30-09-2026&quot;, &quot;1-One&quot;, &quot;2-Two&quot; and &quot;1&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
     <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify success message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Welcome Naveenraj"&amp#27;[0m                                       &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(java.lang.String)&amp#27;[0m
-
-    Embedding After Step Screenshot [image/png 113208 bytes]
-
-
-    Embedding Before Step Screenshot [image/png 113208 bytes]
-
 ]]></system-out>
   </testcase>
-  <testcase name="User should validate after search hotel success message &quot;Select Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.025">
-    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search hotel &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tamil Nadu"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Chennai"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Suite"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"28-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"29-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"1-One"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"2-Two"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC002_ExploreHotelStep.userSearchHotelAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-
-    Embedding After Step Screenshot [image/png 143312 bytes]
-
-
-    Embedding Before Step Screenshot [image/png 143312 bytes]
-
-Select Hotel
+  <testcase name="User search hotel &quot;Tamil Nadu&quot;, &quot;Chennai&quot;, &quot;Suite&quot;, &quot;29-09-2026&quot;, &quot;30-09-2026&quot;, &quot;1-One&quot;, &quot;2-Two&quot; and &quot;1&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify success message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Welcome Naveenraj"&amp#27;[0m                                       &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(java.lang.String)&amp#27;[0m
 ]]></system-out>
   </testcase>
-  <testcase name="initializationError" classname="com.omrbranch.runner.TestRunner" time="36.908">
-    <error message="java.net.ConnectException: Connection timed out: connect" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: java.net.ConnectException: Connection timed out: connect
-	at io.cucumber.core.plugin.MessageFormatter.write(MessageFormatter.java:37)
-	at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
-	at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
-	at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
-	at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:124)
-	at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:104)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:152)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:229)
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2085)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2080)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2079)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1649)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629)
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307)
-	at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:125)
-	at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:87)
-	at io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:65)
-	at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:435)
-	at java.base/sun.nio.cs.StreamEncoder.lockedClose(StreamEncoder.java:237)
-	at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:222)
-	at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:266)
-	at io.cucumber.messages.MessageToNdjsonWriter.close(MessageToNdjsonWriter.java:40)
-	at io.cucumber.core.plugin.MessageFormatter.write(MessageFormatter.java:35)
-	... 7 more
-Caused by: java.net.ConnectException: Connection timed out: connect
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:601)
-	at java.base/sun.nio.ch.Net.connect(Net.java:590)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
-	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
-	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
-	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1302)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143)
-	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:3288)
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderFields(HttpsURLConnectionImpl.java:252)
-	at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:124)
-	... 15 more
-]]></error>
+  <testcase name="User search hotel &quot;Tamil Nadu&quot;, &quot;Chennai&quot;, &quot;Suite&quot;, &quot;29-09-2026&quot;, &quot;30-09-2026&quot;, &quot;1-One&quot;, &quot;2-Two&quot; and &quot;1&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should verify success message after login &amp#27;[0m&amp#27;[32m&amp#27;[1m"Welcome Naveenraj"&amp#27;[0m                                       &amp#27;[90m# com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should validate after search hotel success message &quot;Select Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search hotel &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tamil Nadu"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Chennai"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Suite"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"29-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"30-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"1-One"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"2-Two"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC002_ExploreHotelStep.userSearchHotelAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should validate after search hotel success message &quot;Select Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search hotel &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tamil Nadu"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Chennai"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Suite"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"29-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"30-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"1-One"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"2-Two"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC002_ExploreHotelStep.userSearchHotelAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should validate after search hotel success message &quot;Select Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser search hotel &amp#27;[0m&amp#27;[32m&amp#27;[1m"Tamil Nadu"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Chennai"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"Suite"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"29-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"30-09-2026"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"1-One"&amp#27;[0m&amp#27;[32m, &amp#27;[0m&amp#27;[32m&amp#27;[1m"2-Two"&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m"1"&amp#27;[0m &amp#27;[90m# com.omrbranch.stepdefinition.TC002_ExploreHotelStep.userSearchHotelAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should validate after search hotel success message &quot;Select Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser select the second hotel and dismiss the alert&amp#27;[0m                                                        &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSelectTheSecondHotelAndDismissTheAlert()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User save the last hotel name and hotel price" classname="com.omrbranch.runner.TestRunner" time="0.002">
     <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should validate after search hotel success message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Select Hotel"&amp#27;[0m                                   &amp#27;[90m# com.omrbranch.stepdefinition.TC004_BookHotelStep.userShouldValidateAfterSearchHotelSuccessMessage(java.lang.String)&amp#27;[0m
-
-    Embedding After Step Screenshot [image/png 143312 bytes]
-
 ]]></system-out>
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-]]></system-err>
+  </testcase>
+  <testcase name="User select the last hotel and accept the alert" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser save the last hotel name and hotel price&amp#27;[0m                                                            &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSaveTheLastHotelNameAndHotelPrice()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify after select success message &quot;Book Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser select the last hotel and accept the alert&amp#27;[0m                                                           &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSelectTheLastHotelAndAcceptTheAlert()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User should verify after select success message &quot;Book Hotel&quot;" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser select the second from last hotel and accept the alert&amp#27;[0m                                               &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSelectTheSecondFromLastHotelAndAcceptTheAlert()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User save the second from last hotel name and hotel price" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should validate after search hotel success message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Select Hotel"&amp#27;[0m                                   &amp#27;[90m# com.omrbranch.stepdefinition.TC004_BookHotelStep.userShouldValidateAfterSearchHotelSuccessMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User select the second from last hotel and accept the alert" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser save the second from last hotel name and hotel price&amp#27;[0m                                                &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSaveTheSecondFromLastHotelNameAndHotelPrice()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User save the second hotel name and hotel price" classname="com.omrbranch.runner.TestRunner" time="0.001">
+    <system-out><![CDATA[  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mUser should validate after search hotel success message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Select Hotel"&amp#27;[0m                                   &amp#27;[90m# com.omrbranch.stepdefinition.TC004_BookHotelStep.userShouldValidateAfterSearchHotelSuccessMessage(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="User select the second hotel and dismiss the alert" classname="com.omrbranch.runner.TestRunner" time="0.002">
+    <system-out><![CDATA[  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser save the second hotel name and hotel price&amp#27;[0m                                                          &amp#27;[90m# com.omrbranch.stepdefinition.TC003_SelectHotelStep.userSaveTheSecondHotelNameAndHotelPrice()&amp#27;[0m
+]]></system-out>
   </testcase>
 </testsuite>

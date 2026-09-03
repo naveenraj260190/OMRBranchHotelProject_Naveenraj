@@ -1,290 +1,844 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.756" tests="22" skipped="0" failures="0" errors="0" timestamp="2026-08-31T10:22:41.205509400Z">
-<testcase classname="OMR Branch Hotel Application" name="Verify login with valid credentials without Enter Key - #1.1" time="0.036">
+<testsuite name="Cucumber" time="613.094" tests="16" skipped="0" failures="16" errors="0" timestamp="2026-09-02T07:21:57.884017100Z">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with all fields - #1.1" time="34.952">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe1f9e61f365b89eba1da9a00f11e8fa, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65333}, goog:processID: 17908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65333/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe1f9e61f365b89eba1da9a00f11e8fa">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe1f9e61f365b89eba1da9a00f11e8fa, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65333}, goog:processID: 17908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65333/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe1f9e61f365b89eba1da9a00f11e8fa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Hotel Application" name="Verify login with valid credentials using Enter Key via Keyboard - #1.1" time="0.008">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with only mandatory fields - #1.1" time="82.247">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: email'
+(tried for 30 seconds with 500 milliseconds interval)">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: email'
+(tried for 30 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.omrbranch.utility.BaseClass.visibilityOfElement(BaseClass.java:68)
+	at com.omrbranch.utility.BaseClass.sendKeysElement(BaseClass.java:183)
+	at com.omrbranch.pages.LoginPage.login(LoginPage.java:54)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userEntersAnd(TC001_LoginStep.java:20)
+	at ✽.User enters "ash.naveen.kv@gmail.com" and "Naveen90!"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [51566ffc2686d861efba3b3b0d578edd, findElement {using=id, value=email}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60883}, goog:processID: 6492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60883/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51566ffc2686d861efba3b3b0d578edd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:67)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	... 5 more
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!" with enter key...passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................failed
+Then User should verify success message after login "Welcome Naveenraj".....skipped
+When User search hotel "Tamil Nadu", "Chennai", "28-09-2026", "29-09-2026", "1-One" and "2-Two".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Hotel Application" name="Verify login with invalid credentials - #1.1" time="0.009">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "test90!"....................passed
-Then User should verify error message after login "Invalid Login details or Your Password might have expired.".passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with all fields - #1.1" time="0.016">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotels with only mandatory fields - #1.1" time="0.018">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "28-09-2026", "29-09-2026", "1-One" and "2-Two".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotel without entering any fields" time="0.006">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-And User click Search button................................................passed
-Then User should verify after search hotel error message "Please select state", "Please select city", "Please select Check-in date", "Please select Check-out date", "Please select no. of rooms" and "Please select no. of adults".passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify hotel name sorting in descending order - #1.1" time="0.01">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User click sort from descending order..................................passed
-Then User should verify after sorting that names are listed in descending order.passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify Suite room type hotels are listed - #1.1" time="0.008">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Studio", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User click Suite room type.............................................passed
-Then User should verify after filtering that Suite room type is listed......passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Hotel Search Functionality" name="Verify header contains selected room type - #1.1" time="0.007">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-And User should verify the header contains "Suite"..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select last hotel and navigate to Book Hotel page" time="0.009">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select second from last hotel and navigate to Book Hotel page" time="0.008">
-<system-out><![CDATA[
-Given User is on the OMR Branch hotel page..................................passed
-When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the second from last hotel name and hotel price..............passed
-And User select the second from last hotel and accept the alert.............passed
-Then User should verify after select success message "Book Hotel"...........passed
-]]></system-out>
-</testcase>
-<testcase classname="OMR Branch Select Hotel Functionality" name="Verify select second hotel and dismiss the alert" time="0.009">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify search hotel without entering any fields" time="33.966">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a490eb1e6852dcce68b919dc7141983d, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61774}, goog:processID: 28384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61774/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a490eb1e6852dcce68b919dc7141983d">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a490eb1e6852dcce68b919dc7141983d, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61774}, goog:processID: 28384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61774/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a490eb1e6852dcce68b919dc7141983d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "29-09-2026", "30-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the second hotel name and hotel price........................passed
-And User select the second hotel and dismiss the alert......................passed
-Then User should validate after search hotel success message "Select Hotel".passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+And User click Search button................................................skipped
+Then User should verify after search hotel error message "Please select state", "Please select city", "Please select Check-in date", "Please select Check-out date", "Please select no. of rooms" and "Please select no. of adults".skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and special request - #1.1" time="0.045">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify hotel name sorting in descending order - #1.1" time="35.981">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41e0cc3caeb7d25e33675c6f6062f853, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52189}, goog:processID: 25732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52189/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41e0cc3caeb7d25e33675c6f6062f853">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [41e0cc3caeb7d25e33675c6f6062f853, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52189}, goog:processID: 25732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52189/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 41e0cc3caeb7d25e33675c6f6062f853
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
-And User enter payment details, proceed with Card Type "debit_card".........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User click sort from descending order..................................skipped
+Then User should verify after sorting that names are listed in descending order.skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and without special request - #1.1" time="0.021">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify Suite room type hotels are listed - #1.1" time="41.148">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63cfe6cd0144f41ea8c8e22528feee3b, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64482}, goog:processID: 22488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64482/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63cfe6cd0144f41ea8c8e22528feee3b">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [63cfe6cd0144f41ea8c8e22528feee3b, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64482}, goog:processID: 22488, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64482/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 63cfe6cd0144f41ea8c8e22528feee3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".passed
-And User Skipping Special Request...........................................passed
-And User enter payment details, proceed with Card Type "debit_card".........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Studio", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User click Suite room type.............................................skipped
+Then User should verify after filtering that Suite room type is listed......skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST ,card payment and with special request - #1.1" time="0.032">
+<testcase classname="OMR Branch Hotel Search Functionality" name="Verify header contains selected room type - #1.1" time="34.377">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c410ab58213f2d59a1ed13d8a9bae04, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53966}, goog:processID: 22152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c410ab58213f2d59a1ed13d8a9bae04">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c410ab58213f2d59a1ed13d8a9bae04, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53966}, goog:processID: 22152, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53966/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c410ab58213f2d59a1ed13d8a9bae04
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC002_Explorehotel.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User skipping GST Details and User add Special Request "Need parking"...passed
-And User enter payment details, proceed with Card Type "debit_card".........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "28-09-2026", "29-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+And User should verify the header contains "Suite"..........................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST, card payment and without special request - #1.1" time="0.019">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and special request - #1.1" time="36.131">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [271cb08acf9fd24022ef16e06ba6bdb0, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51938}, goog:processID: 26348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51938/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 271cb08acf9fd24022ef16e06ba6bdb0">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [271cb08acf9fd24022ef16e06ba6bdb0, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51938}, goog:processID: 26348, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51938/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 271cb08acf9fd24022ef16e06ba6bdb0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User skipping GST Details and Special Request...........................passed
-And User enter payment details, proceed with Card Type "debit_card".........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".skipped
+And User enter payment details, proceed with Card Type "debit_card".........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify card payment error messages without entering payment details - #1.1" time="0.007">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST, card payment and without special request - #1.1" time="35.613">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5d4f97ba68757ded39c3ebbea0f7c0c, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60133}, goog:processID: 27492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60133/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d4f97ba68757ded39c3ebbea0f7c0c">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5d4f97ba68757ded39c3ebbea0f7c0c, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60133}, goog:processID: 27492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60133/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b5d4f97ba68757ded39c3ebbea0f7c0c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
-And User click credit card..................................................passed
-And User click submit without entering payment details......................passed
-Then User should verify after payment details error message "Please select your card type", "Please select your card", "Please provide your card number", "Please provide name on your card", "Please provide your Card Expiry Date" and "Please provide your Card's security code".passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".skipped
+And User Skipping Special Request...........................................skipped
+And User enter payment details, proceed with Card Type "debit_card".........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and special request - #1.1" time="0.013">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST ,card payment and with special request - #1.1" time="34.343">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [effeecd010222ed0a4c4371b47501f43, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61378}, goog:processID: 456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61378/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: effeecd010222ed0a4c4371b47501f43">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [effeecd010222ed0a4c4371b47501f43, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61378}, goog:processID: 456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61378/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: effeecd010222ed0a4c4371b47501f43
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
-And User enter upi details "seleniumtraining@vbc" and click submit..........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User skipping GST Details and User add Special Request "Need parking"...skipped
+And User enter payment details, proceed with Card Type "debit_card".........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and without special request - #1.1" time="0.009">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST, card payment and without special request - #1.1" time="34.924">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a245833c2928f064f37511b34aef4f08, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56244}, goog:processID: 22832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56244/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a245833c2928f064f37511b34aef4f08">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a245833c2928f064f37511b34aef4f08, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56244}, goog:processID: 22832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56244/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a245833c2928f064f37511b34aef4f08
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "test@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".passed
-And User enter upi details "seleniumtraining@vbc" and click submit..........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User skipping GST Details and Special Request...........................skipped
+And User enter payment details, proceed with Card Type "debit_card".........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and with special request - #1.1" time="0.008">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify card payment error messages without entering payment details - #1.1" time="34.469">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2b828d1484bcd7cacb936344a390527, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49677}, goog:processID: 27708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49677/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b828d1484bcd7cacb936344a390527">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2b828d1484bcd7cacb936344a390527, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49677}, goog:processID: 27708, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49677/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b828d1484bcd7cacb936344a390527
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User skipping GST Details and User add Special Request "Need parking"...passed
-And User enter upi details "seleniumtraining@vbc" and click submit..........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".skipped
+And User click credit card..................................................skipped
+And User click submit without entering payment details......................skipped
+Then User should verify after payment details error message "Please select your card type", "Please select your card", "Please provide your card number", "Please provide name on your card", "Please provide your Card Expiry Date" and "Please provide your Card's security code".skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and without special request - #1.1" time="0.007">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and special request - #1.1" time="34.226">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0c9db8fabb509e1cb13e7a2b5640b5f, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64192}, goog:processID: 25240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64192/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0c9db8fabb509e1cb13e7a2b5640b5f">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0c9db8fabb509e1cb13e7a2b5640b5f, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64192}, goog:processID: 25240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64192/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0c9db8fabb509e1cb13e7a2b5640b5f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User skipping GST Details and Special Request...........................passed
-And User enter upi details "seleniumtraining@vbc" and click submit..........passed
-And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.passed
-Then User should verify same selected Hotel is booked or not................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".skipped
+And User enter upi details "seleniumtraining@vbc" and click submit..........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="OMR Branch Book Hotel Functionality" name="Verify UPI payment error message without entering UPI ID - #1.1" time="0.005">
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel with GST UPI payment and without special request - #1.1" time="34.977">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [046322515f845a67b597f7afd9ed1d35, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53492}, goog:processID: 25732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53492/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 046322515f845a67b597f7afd9ed1d35">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [046322515f845a67b597f7afd9ed1d35, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53492}, goog:processID: 25732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53492/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 046322515f845a67b597f7afd9ed1d35
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
 Given User is on the OMR Branch hotel page..................................passed
 When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
-Then User should verify success message after login "Welcome Naveenraj".....passed
-When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".passed
-Then User should validate after search hotel success message "Select Hotel".passed
-When User save the last hotel name and hotel price..........................passed
-And User select the last hotel and accept the alert.........................passed
-Then User should verify after select success message "Book Hotel"...........passed
-When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".passed
-And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".passed
-And User click upi..........................................................passed
-And User click submit without entering payment details......................passed
-Then User should verify after payment details error message "Please provide your UPI ID".passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "test@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam".skipped
+And User enter upi details "seleniumtraining@vbc" and click submit..........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and with special request - #1.1" time="33.877">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5dc4a9c69a0452089b4a7a1757569670, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60915}, goog:processID: 26596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60915/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dc4a9c69a0452089b4a7a1757569670">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5dc4a9c69a0452089b4a7a1757569670, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60915}, goog:processID: 26596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60915/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dc4a9c69a0452089b4a7a1757569670
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User skipping GST Details and User add Special Request "Need parking"...skipped
+And User enter upi details "seleniumtraining@vbc" and click submit..........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify book hotel without GST UPI payment and without special request - #1.1" time="37.794">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff339d7c23e17a56f1a8516759f5fcde, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61424}, goog:processID: 27556, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61424/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff339d7c23e17a56f1a8516759f5fcde">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ff339d7c23e17a56f1a8516759f5fcde, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61424}, goog:processID: 27556, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61424/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ff339d7c23e17a56f1a8516759f5fcde
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User skipping GST Details and Special Request...........................skipped
+And User enter upi details "seleniumtraining@vbc" and click submit..........skipped
+And User should verify after hotel booking success message "Booking is Confirmed" and save the order ID.skipped
+Then User should verify same selected Hotel is booked or not................skipped
+]]></system-out>
+</testcase>
+<testcase classname="OMR Branch Book Hotel Functionality" name="Verify UPI payment error message without entering UPI ID - #1.1" time="33.9">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Welcome')]&quot;}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c7ecc444a9e47f09fea20ce6feef31, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, goog:processID: 23084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c7ecc444a9e47f09fea20ce6feef31">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Welcome')]"}
+  (Session info: chrome=152.0.7977.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1c7ecc444a9e47f09fea20ce6feef31, findElement {using=xpath, value=//a[contains(text(),'Welcome')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 152.0.7977.65, chrome: {chromedriverVersion: 152.0.7977.75 (4999cc1efed3..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, goog:processID: 23084, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 152.0.7977.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 30000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c7ecc444a9e47f09fea20ce6feef31
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.getText(Unknown Source)
+	at com.omrbranch.utility.BaseClass.getTextElement(BaseClass.java:234)
+	at com.omrbranch.pages.ExploreHotelPage.getWelcomeMsg(ExploreHotelPage.java:142)
+	at com.omrbranch.stepdefinition.TC001_LoginStep.userShouldVerifySuccessMessageAfterLogin(TC001_LoginStep.java:28)
+	at ✽.User should verify success message after login "Welcome Naveenraj"(file:///C:/Users/ashna/eclipse-workspace/OMRBranchHotelProject_Naveenraj/src/test/resources/features/TC004_BookHotel.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on the OMR Branch hotel page..................................passed
+When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"..................passed
+Then User should verify success message after login "Welcome Naveenraj".....failed
+When User search hotel "Tamil Nadu", "Chennai", "Suite", "01-09-2026", "02-09-2026", "1-One", "2-Two" and "1".skipped
+Then User should validate after search hotel success message "Select Hotel".skipped
+When User save the last hotel name and hotel price..........................skipped
+And User select the last hotel and accept the alert.........................skipped
+Then User should verify after select success message "Book Hotel"...........skipped
+When User add Guest Details "Mr", "Naveenraj", "Rajendran", "9952040520" and "ash.naveen.kv@gmail.com".skipped
+And User add GST Details "9043592058", "Greens Tech OMR Branch" and "Thoraipakkam" and User add Special Request "Need parking".skipped
+And User click upi..........................................................skipped
+And User click submit without entering payment details......................skipped
+Then User should verify after payment details error message "Please provide your UPI ID".skipped
 ]]></system-out>
 </testcase>
 </testsuite>

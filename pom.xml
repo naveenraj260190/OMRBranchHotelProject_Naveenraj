@@ -17,6 +17,7 @@
 				<configuration>
 					<includes>
 						<include>**/TestRunner.java</include>
+						<include>**/WebRunner.java</include>
 					</includes>
 				</configuration>
 			</plugin>

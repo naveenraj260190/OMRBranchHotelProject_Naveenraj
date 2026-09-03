@@ -8,7 +8,7 @@ Feature: OMR Branch Hotel Search Functionality
     When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
     Then User should verify success message after login "Welcome Naveenraj"
 
-  @Yes
+  @Explore
   Scenario Outline: Verify search hotels with all fields
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -17,7 +17,7 @@ Feature: OMR Branch Hotel Search Functionality
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
       | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
-  @Yes
+  @Explore
   Scenario Outline: Verify search hotels with only mandatory fields
     When User search hotel "<State>", "<City>", "<Check in date>", "<Check out date>", "<No of Room>" and "<No of Adults>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -26,7 +26,7 @@ Feature: OMR Branch Hotel Search Functionality
       | State      | City    | Check in date | Check out date | No of Room | No of Adults |
       | Tamil Nadu | Chennai | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        |
 
-  @Yes
+  @Explore
   Scenario: Verify search hotel without entering any fields
     And User click Search button
     Then User should verify after search hotel error message "Please select state", "Please select city", "Please select Check-in date", "Please select Check-out date", "Please select no. of rooms" and "Please select no. of adults"
@@ -41,7 +41,7 @@ Feature: OMR Branch Hotel Search Functionality
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
       | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
-  @Yes
+  @Explore
   Scenario Outline: Verify hotel name sorting in descending order
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -52,7 +52,7 @@ Feature: OMR Branch Hotel Search Functionality
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
       | Tamil Nadu | Chennai | Suite     | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
-  @Yes
+  @Explore
   Scenario Outline: Verify Suite room type hotels are listed
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
@@ -63,7 +63,7 @@ Feature: OMR Branch Hotel Search Functionality
       | State      | City    | Room type | Check in date | Check out date | No of Room | No of Adults | No of Childs |
       | Tamil Nadu | Chennai | Studio    | 28-09-2026    | 29-09-2026     | 1-One      | 2-Two        | 1            |
 
-  @Yes
+  @Explore
   Scenario Outline: Verify header contains selected room type
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
