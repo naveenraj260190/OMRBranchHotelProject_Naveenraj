@@ -5,10 +5,10 @@ Feature: OMR Branch Hotel Search Functionality
 
   Background:
     Given User is on the OMR Branch hotel page
-    When User enters "ash.naveen.kv@gmail.com" and "Naveen90!"
-    Then User should verify success message after login "Welcome Naveenraj"
+    When User enters "anandrajan.ms@gmail.com" and "Sast@117"
+    Then User should verify success message after login "Welcome Anand"
 
-  @Explore
+  @Explor1e
   Scenario Outline: Verify search hotels with all fields
     When User search hotel "<State>", "<City>", "<Room type>", "<Check in date>", "<Check out date>", "<No of Room>", "<No of Adults>" and "<No of Childs>"
     Then User should validate after search hotel success message "Select Hotel"
